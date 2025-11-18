@@ -1,0 +1,74 @@
+.tabla-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
+  padding: 10px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tabla thead {
+  background: #f4f4f4;
+}
+
+.tabla th {
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla td {
+  padding: 12px;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla tr:hover {
+  background: #f9f9f9;
+  transition: .2s;
+}
+
+/* Botón */
+
+.btn-editar {
+  background: #2d7df4;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-editar:hover {
+  background: #1e63c7;
+}
+
+/* ===== Stock bajo ===== */
+.stock-bajo {
+  color: #e63946;
+  font-weight: 600;
+}
+
+.stock-normal {
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+/* ===== Mensaje vacío ===== */
+.vacio {
+  text-align: center;
+  padding: 15px;
+  color: #777;
+}

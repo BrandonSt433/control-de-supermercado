@@ -1,0 +1,21 @@
+.sidebar {
+  width: 220px;
+  background: #1b1b1b;
+  height: calc(100vh - 60px);
+  padding: 20px;
+  color: white;
+}
+
+.sidebar-link {
+  display: block;
+  color: #ddd;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+  margin-left: 5px;
+}

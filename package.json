@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "pdfkit": "^0.17.2",
+    "react-router-dom": "^7.9.5",
+    "sweetalert2": "^11.26.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}

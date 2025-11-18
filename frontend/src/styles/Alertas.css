@@ -1,0 +1,81 @@
+.alertas-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.alertas-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+}
+
+.alertas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.alert-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  transition: 0.2s ease;
+  border-left: 6px solid #555;
+}
+
+.alert-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.vencimiento {
+  font-size: 14px;
+  color: #333;
+}
+
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.badge-danger {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+
+.badge-warning {
+  background-color: #ff9933;
+  color: white;
+}
+
+
+.badge-alert {
+  background-color: #ffdd33;
+  color: #333;
+}
+
+.badge-good {
+  background-color: #44c767;
+  color: white;
+}
