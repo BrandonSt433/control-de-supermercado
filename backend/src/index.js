@@ -1,7 +1,5 @@
 import app from "./app.js";
-import dashboardRoutes from "./routes/dashboard.js"
-
-app.use("/api/dashboard", dashboardRoutes);
+import { iniciarCronJob } from "./cron/cronJob.js";
 
 app.get("/", (req, res) => {
   res.send("Servidor funcionando correctamente");
@@ -9,7 +7,9 @@ app.get("/", (req, res) => {
 
 const PORT = 4000;
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  
+  iniciarCronJob(); 
 });
 

@@ -1,21 +1,130 @@
 .sidebar {
-  width: 220px;
-  background: #1b1b1b;
-  height: calc(100vh - 60px);
-  padding: 20px;
-  color: white;
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0d1223, #0b1120 60%);
+  padding: 12px 18px; 
+  display: flex;
+  flex-direction: column;
+  color: #d1d5db;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 4px;
+}
+
+.user-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.user-role {
+  font-size: 11px;
+  background: rgba(59, 130, 246, 0.2);
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  display: inline-block;
+  color: #bfdbfe;
+  width: fit-content;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 50px;
 }
 
 .sidebar-link {
-  display: block;
-  color: #ddd;
-  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #cbd5e1;
   text-decoration: none;
-  font-size: 18px;
-  transition: 0.2s;
+  transition: 0.18s ease;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  min-width: 22px;
+  text-align: center;
 }
 
 .sidebar-link:hover {
-  color: #fff;
-  margin-left: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(3px);
 }
+
+.sidebar-link.active {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(37, 99, 235, 0.65);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: #fca5a5;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  color: #fecaca;
+  transform: translateX(4px);
+}
+
+.sidebar-badge {
+  background-color: #ef4444;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  
+  padding: 3px 8px;
+  border-radius: 99px;
+  min-width: 20px;
+  text-align: center;
+  
+  margin-left: auto;   
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4); 
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+  

@@ -11,6 +11,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+html,
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main.content{
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto ;
+  padding: 0px;
 }
 
 a {
@@ -58,3 +76,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.layout {
+  display: flex;
+  min-height: 100vh;     
+}
+
+main.content {
+  flex: 1;                
+  min-height: 100vh;      
+  background: #ffffff;    
+  padding: 24px;          
+  box-sizing: border-box;
+}
+  

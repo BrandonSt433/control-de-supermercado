@@ -1,0 +1,105 @@
+.transacciones-page {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.transacciones-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Filtros arriba */
+.filtros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filtros-container input[type="text"],
+.filtros-container select,
+.filtros-container input[type="date"] {
+  background: #22252e;
+  color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #3b3f4c;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.filtros-container input::placeholder {
+  color: #9ca3af;
+}
+
+.filtro-fecha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Layout: tabla a la izquierda, gráficos a la derecha */
+.transacciones-layout {
+  display: grid;
+  grid-template-columns: 1.7fr 1.3fr;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+/* Caja de tabla */
+.tabla-transacciones {
+  background: #111827;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: #e5e7eb;
+  min-height: 260px;
+}
+
+.tabla-transacciones table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabla-transacciones th,
+.tabla-transacciones td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.tabla-transacciones th {
+  background: #1f2937;
+  font-weight: 600;
+  text-align: left;
+}
+
+.tabla-transacciones tr:nth-child(even) td {
+  background: #111827;
+}
+
+.tabla-transacciones tr:hover td {
+  background: #1f2937;
+}
+
+/* Caja de gráficos */
+.graficos-transacciones {
+  background: #111827;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: #e5e7eb;
+  min-height: 260px;
+}
+
+.graficos-transacciones h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #f87171;
+  font-size: 14px;
+}

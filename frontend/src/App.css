@@ -1,9 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
 
 .logo {
   height: 6em;
@@ -45,7 +52,8 @@
   display: flex;
 }
 
-.content {
-  padding: 20px;
+.contenido {
+  padding: 0px;
   width: 100%;
+  background-color: #ffff;
 }

@@ -1,9 +1,9 @@
-import express from "express";
-import { registrarVenta, getVentas } from "../controllers/ventasController.js";
+import { Router } from "express";
+import { crearVenta, historialVentas } from "../controllers/ventasController.js";
 
-const router = express.Router();
+const router = Router();
 
-router.post("/", registrarVenta);
-router.get("/", getVentas);
+router.post("/", crearVenta);
+router.get("/historial", historialVentas);
 
 export default router;

@@ -1,66 +1,152 @@
 .dashboard {
   width: 100%;
+  padding: 24px;
+  background: #f3f4f6;
+  min-height: calc(100vh - 90px);
 }
 
 .title {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #111827;
 }
+
+/* === Tarjetas === */
 
 .cards {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  width: 220px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 20px;
+  min-width: 220px;
+  border-radius: 16px;
+  text-align: left;
+
+  color: #f9fafb;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
-.card h3 {
-  font-size: 18px;
-  color: #333;
+/* Colores por tipo de tarjeta */
+.card-total {
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
 }
 
-.card p {
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 10px;
+.card-stock-bajo {
+  background: linear-gradient(135deg, #f97316, #facc15);
+}
+
+.card-por-vencer {
+  background: linear-gradient(135deg, #ec4899, #f97316);
+}
+
+.card-vencidos {
+  background: linear-gradient(135deg, #0f172a, #4b5563);
+
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.4);
+  opacity: 0.96;
+}
+
+.card--active {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.9),
+    0 18px 40px rgba(15, 23, 42, 0.5);
+}
+
+/* Tipografía dentro de la tarjeta */
+.card-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9; 
+  color: #ffffff;
+}
+
+.card-number {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+  opacity: 0.95;
+  color: #ffffff;
+}
+/* === Tabla dinámica === */
+
+.tabla-wrapper {
+  margin-top: 40px;
 }
 
 .subtitle {
-  margin-top: 40px;
-  font-size: 25px;
-  background-color: red;
-  padding: 20px;
-  
+  font-size: 22px;
+  font-weight: 600;
+  background-color: #020617;
+  color: #38bdf8;
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.empty-msg {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #4b5563;
+  text-align: center;
 }
 
 .table {
   margin-top: 20px;
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.table th, .table td {
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
+.table th,
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
 }
 
 .table th {
-  background: #f7f7f7;
-  font-weight: bold;
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
 }
 
 .table tr:hover {
-  background: #f0f0f0;
+  background: #f3f4f6;
 }
+
+.chart-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(15, 23, 42, 0.08);
+} 
