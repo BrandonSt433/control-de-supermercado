@@ -1,6 +1,5 @@
 Sistema de Control de Supermercado
 
-Descripción
 Proyecto de ingeniería enfocado en la gestión de inventarios y control de stock en tiempo real con notifiacion y correos automaticos segun el bajo stock. 
 
 Stack Tecnológico Realizado
